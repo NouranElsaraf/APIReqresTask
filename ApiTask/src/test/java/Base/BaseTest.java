@@ -10,12 +10,11 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        // Configure every request with base URI and logging
         requestSpec = RestAssured.given()
                 .baseUri("https://reqres.in/api")
-                .log().all();  // Log all requests and responses globally
+                .log().all();  // Log all requests and responses
 
-        // Set globally
+        // Set global
         RestAssured.requestSpecification = requestSpec;
 
     }
