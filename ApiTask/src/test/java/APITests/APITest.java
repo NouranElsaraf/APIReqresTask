@@ -15,17 +15,7 @@ import java.util.Map;
 import static Utils.EndPoints.*;
 
 public class APITest extends BaseTest {
-
-    @BeforeMethod
-    public void setup() {
-        // Set up any preconditions for each test
-    }
-
-    @AfterMethod
-    public void teardown() {
-        // Tear down or clean up after each test, if necessary
-    }
-
+    
     @Test
     public void listUsersTest() {
         int page = 2;
